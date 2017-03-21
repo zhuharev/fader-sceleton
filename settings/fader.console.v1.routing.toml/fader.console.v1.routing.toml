@@ -1,0 +1,98 @@
+
+[[routing.routs]]
+name = "cv1_Dashboard"
+path = "/console/v1/dashboard"
+bucket = "fader.consolev1"
+file = "dashboard.html"
+licenses = ["guest"]
+methods = ["get"]
+
+[[routing.routs]]
+name = "cv1_ListBuckets"
+path = "/console/v1/buckets"
+bucket = "fader.consolev1"
+file = "list_buckets.html"
+licenses = ["guest"]
+methods = ["get"]
+
+[[routing.routs]]
+name = "cv1_ListFiles"
+path = "/console/v1/buckets/{bucket_id}/files"
+bucket = "fader.consolev1"
+file = "list_files.html"
+licenses = ["guest"]
+methods = ["get"]
+
+[[routing.routs]]
+name = "cv1_EditFile"
+path = "/console/v1/files/{file_id}/edit"
+bucket = "fader.consolev1"
+file = "edit_file.html"
+licenses = ["guest"]
+methods = ["get"]
+
+[[routing.routs]]
+name = "cv1_EditFile_UpdateByCmd"
+path = "/console/v1/files/{file_id}/cmd_{cmd}"
+bucket = "fader.consolev1"
+file = "edit_file.do.html"
+licenses = ["guest"]
+methods = ["post"]
+
+[[routing.routs]]
+name = "cv1_AppExport"
+path = "/console/v1/app/export"
+bucket = "fader.consolev1"
+file = "app.do"
+licenses = ["guest"]
+methods = ["get"]
+
+[[routing.routs]]
+name = "cv1_AppImport"
+path = "/console/v1/app/import"
+bucket = "fader.consolev1"
+file = "app_import.do"
+licenses = ["guest"]
+methods = ["post"]
+
+[[routing.routs]]
+name = "cv1_CreateNewFile"
+path = "/console/v1/buckets/{bucket_id}/files"
+bucket = "fader.consolev1"
+file = "create_file.do"
+licenses = ["guest"]
+methods = ["post"]
+
+[[routing.routs]]
+name = "cv1_CreateNewBucket"
+path = "/console/v1/buckets"
+bucket = "fader.consolev1"
+file = "create_bucket.do"
+licenses = ["guest"]
+methods = ["post"]
+
+[[routing.routs]]
+name = "cv1_DeleteFile"
+path = "/console/v1/files/{file_id}/delete"
+bucket = "fader.consolev1"
+file = "file_delete.do"
+licenses = ["guest"]
+methods = ["post"]
+
+[[routing.routs]]
+name = "cv1_FileImportRaw"
+path = "/console/v1/files/{file_id}/upload_raw"
+bucket = "fader.consolev1"
+file = "update_file_raw_data_via_uploader.do"
+licenses = ["guest"]
+methods = ["post"]
+
+# Для использования в админке
+[[routing.routs]]
+name = "cv1_RawFileContent"
+path = "/console/v1/files/{file_id}/raw"
+bucket = "fader.consolev1"
+file = "raw_file_content"
+lua = "session.middleware"
+licenses = ["guest"]
+methods = ["get"]

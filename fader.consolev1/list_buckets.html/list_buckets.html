@@ -1,0 +1,38 @@
+
+{% extends "fader.consolev1/_layout.html" %}
+
+{% block content %}
+<div class="uk-grid">
+	<div class="uk-width-1-1">
+		<ul class="uk-breadcrumb">
+			<li><a href="{{ Route("cv1_Dashboard").URLPath() }}" class="uk-icon-home"></a></li>
+			<li><a href="{{ Route("cv1_ListBuckets").URLPath() }}">Buckets</a></li>
+		</ul>
+	</div>
+	{# cv1_CreateNewBucket #}
+	
+	<div class="uk-width-1-1 uk-margin-bottom">
+	    <ul class="uk-subnav uk-subnav-line uk-flex-right">
+            <li>
+                <form 
+                    action="{{ Route("cv1_CreateNewBucket").URLPath() }}"
+                    method="POST" 
+                    class="uk-form">
+                    <input type="text" class="uk-form-small" name="BucketName" placeholder="BucketName">
+                    <button class="uk-button uk-button-small"><i class="uk-icon-plus"></i> New bucket</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+    
+	<div class="uk-width-1-1">
+		<h1 class="uk-heading">Buckets</h1>
+		<ul class="uk-list uk-list-striped">
+		{% for b in ListBuckets() %}
+			<li><a href="{{ Route("cv1_ListFiles").URLPath("bucket_id", b.BucketID.String()) }}">{{ b.BucketName }}</a></li>
+		{% endfor %}
+		</ul>
+	</div>
+</div>
+
+{% endblock %}

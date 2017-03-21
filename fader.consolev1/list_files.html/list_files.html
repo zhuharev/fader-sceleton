@@ -1,0 +1,37 @@
+
+{% extends "fader.consolev1/_layout.html" %}
+
+{% block content %}
+<div class="uk-grid">
+	<div class="uk-width-1-1 uk-margin-bottom">
+		<ul class="uk-breadcrumb">
+			<li><a href="{{ Route("cv1_Dashboard").URLPath() }}" class="uk-icon-home"></a></li>
+			<li><a href="{{ Route("cv1_ListBuckets").URLPath() }}">Buckets</a></li>
+			<li><a href="{{ Route("cv1_ListFiles").URLPath() }}">{{ ctx.Get("CurrentBucketName") }}</a></li>
+		</ul>
+	</div>
+	
+	<div class="uk-width-1-1 uk-margin-bottom">
+	    <ul class="uk-subnav uk-subnav-line uk-flex-right">
+            <li>
+                <form 
+                    action="{{ Route("cv1_CreateNewFile").URLPath("bucket_id", ctx.Get("bucket_id"), "a", "b") }}"
+                    method="POST" 
+                    class="uk-form">
+                    <input type="text" class="uk-form-small" name="FileName" placeholder="File name">
+                    <button class="uk-button uk-button-small"><i class="uk-icon-plus"></i> New file</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+	
+	<div class="uk-width-1-1">
+		<ul class="uk-list uk-list-striped">
+		{% for f in ListFilesByBucketID(ctx.Get("bucket_id")) %}
+			<li><a href="{{ Route("cv1_EditFile").URLPath("file_id", f.FileID.String()) }}">{{ f.FileName }}</a></li>
+		{% endfor %}
+		</ul>
+	</div>
+</div>
+
+{% endblock %}

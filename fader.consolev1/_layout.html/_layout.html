@@ -1,0 +1,84 @@
+
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/uikit.almost-flat.min.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/autocomplete.almost-flat.min.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/placeholder.almost-flat.min.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/progress.almost-flat.min.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/form-select.almost-flat.min.css" />
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/upload.almost-flat.min.css" />
+		
+		<script id="ACETypes" type="application/json">{
+			"text/css": "ace/mode/css",
+			"text/plain": "ace/mode/django",
+			"text/html": "ace/mode/django",
+			"application/xhtml+xml": "ace/mode/django",
+			"text/javascript": "ace/mode/javascript",
+			"application/javascript": "ace/mode/javascript",
+			"application/x-javascript": "ace/mode/javascript",
+			"text/toml": "ace/mode/toml",
+			"text/xml": "ace/mode/xml",
+			"application/soap+xml": "ace/mode/xml",
+			"application/json": "ace/mode/json",
+			"text/json": "ace/mode/json",
+			"text/csv": "ace/mode/json",
+			"text/lua": "ace/mode/lua"
+		}</script>
+		{% block head %}{% endblock %}
+	</head>
+	<body>
+		<div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
+
+			<nav class="uk-navbar uk-margin-bottom">
+				<a class="uk-navbar-brand uk-hidden-small" 
+					href="{{ Route("cv1_Dashboard").URLPath() }}">FD-Cv1</a>
+				<ul class="uk-navbar-nav uk-hidden-small">
+					{% include "fader.consolev1/_navbar.html" %}
+				</ul>
+				<div class="uk-navbar-content uk-navbar-flip  uk-hidden-small">
+				    <ul class="uk-navbar-nav uk-hidden-small">
+				        <li>
+			                <a 
+			                title="Export all data"
+			                class="uk-navbar-content" 
+			                href="{{ Route("cv1_AppExport").URLPath() }}"><i class="uk-icon-download"></i></a>
+		                </li>
+			        </ul>
+			    </div>
+				<a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+				<div class="uk-navbar-brand uk-navbar-center uk-visible-small">FD-Cv1</div>
+			</nav>
+		</div>
+
+		<div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
+			{% block content %}{% endblock %}
+		</div>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/uikit.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.15/clipboard.min.js"></script>
+	<script>
+	$(document).ready(
+        function(){
+            var c = new Clipboard('[data-clipboard-text]');
+        }
+    )
+	</script>
+	{% block scripts %}{% endblock %}
+
+	<div id="offcanvas" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav uk-nav-offcanvas">
+                {% include "fader.consolev1/_navbar.html" %}
+            </ul>
+        </div>
+    </div>
+
+	</body>
+</html>
