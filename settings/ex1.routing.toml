@@ -1,0 +1,8 @@
+[[routing.routs]]
+name = "ex1_Login"
+path = "/ex1/login"
+bucket = "ex1"
+file = "login.html"
+lua = "ex1/session.middleware"
+licenses = ["guest"]
+methods = ["get"]

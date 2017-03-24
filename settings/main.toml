@@ -1,0 +1,26 @@
+
+[main]
+
+# include only works in 'main.toml'
+include = [
+    "fader.console.v1.toml",
+	"fader.console.v1.routing.toml",
+	
+	"ex1.routing.toml",
+    
+	# your application
+]
+
+tplcache = false
+
+[routing.csrf]
+enabled = true
+
+# REQUIRED: after the first start to please change a secret value (once)
+secret = "secret" 
+tokenlookup = "form:csrf"
+
+[routing.csrf.cookie]
+name = "csrf" # cookie name
+path = "/" # cookie path
+age = 86400 # 24H

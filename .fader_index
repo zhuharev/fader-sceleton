@@ -1,0 +1,198 @@
+{
+    "/.fader_index": {
+      "Path": "/.fader_index",
+      "Size": 5858,
+      "ModTime": "2017-03-24T03:31:18.075149512+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/ex1": {
+      "Path": "/ex1",
+      "Size": 4096,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": true
+    },
+    "/ex1/login.html": {
+      "Path": "/ex1/login.html",
+      "Size": 196,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/ex1/session.middleware.lua": {
+      "Path": "/ex1/session.middleware.lua",
+      "Size": 520,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1": {
+      "Path": "/fader.consolev1",
+      "Size": 4096,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": true
+    },
+    "/fader.consolev1/Zagruzki_2017-02-01_18-10-05.png": {
+      "Path": "/fader.consolev1/Zagruzki_2017-02-01_18-10-05.png",
+      "Size": 806729,
+      "ModTime": "2017-03-24T03:28:16.819154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/_layout.html": {
+      "Path": "/fader.consolev1/_layout.html",
+      "Size": 3496,
+      "ModTime": "2017-03-24T03:32:42.595147053+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/_navbar.html": {
+      "Path": "/fader.consolev1/_navbar.html",
+      "Size": 80,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/app.do.lua": {
+      "Path": "/fader.consolev1/app.do.lua",
+      "Size": 28,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/app_import.do.lua": {
+      "Path": "/fader.consolev1/app_import.do.lua",
+      "Size": 17,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/create_bucket.do.lua": {
+      "Path": "/fader.consolev1/create_bucket.do.lua",
+      "Size": 208,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/create_file.do.lua": {
+      "Path": "/fader.consolev1/create_file.do.lua",
+      "Size": 419,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/dashboard.html": {
+      "Path": "/fader.consolev1/dashboard.html",
+      "Size": 2537,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/edit_file.do.html.lua": {
+      "Path": "/fader.consolev1/edit_file.do.html.lua",
+      "Size": 2334,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/edit_file.html": {
+      "Path": "/fader.consolev1/edit_file.html",
+      "Size": 17246,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/edit_file.html.lua": {
+      "Path": "/fader.consolev1/edit_file.html.lua",
+      "Size": 204,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/file_delete.do.lua": {
+      "Path": "/fader.consolev1/file_delete.do.lua",
+      "Size": 368,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/list_buckets.html": {
+      "Path": "/fader.consolev1/list_buckets.html",
+      "Size": 1273,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/list_files.html": {
+      "Path": "/fader.consolev1/list_files.html",
+      "Size": 1378,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/list_files.html.lua": {
+      "Path": "/fader.consolev1/list_files.html.lua",
+      "Size": 138,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/raw_file_content.lua": {
+      "Path": "/fader.consolev1/raw_file_content.lua",
+      "Size": 300,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/fader.consolev1/update_file_raw_data_via_uploader.do.lua": {
+      "Path": "/fader.consolev1/update_file_raw_data_via_uploader.do.lua",
+      "Size": 585,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/settings": {
+      "Path": "/settings",
+      "Size": 4096,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": true
+    },
+    "/settings/ex1.routing.toml": {
+      "Path": "/settings/ex1.routing.toml",
+      "Size": 168,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/settings/fader.console.v1.routing.toml": {
+      "Path": "/settings/fader.console.v1.routing.toml",
+      "Size": 2294,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/settings/fader.console.v1.toml": {
+      "Path": "/settings/fader.console.v1.toml",
+      "Size": 302,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/settings/main.toml": {
+      "Path": "/settings/main.toml",
+      "Size": 458,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    },
+    "/settings/session.middleware.lua": {
+      "Path": "/settings/session.middleware.lua",
+      "Size": 26,
+      "ModTime": "2017-03-24T03:28:16.823154786+03:00",
+      "Hash": "",
+      "IsDir": false
+    }
+  }

@@ -1,0 +1,20 @@
+
+#################################
+# replace main config
+#################################
+# [main]
+# tplcache = false
+# 
+# [routing.csrf]
+#
+# [routing.csrf.cookie]
+#
+# [[routing.routs]]
+# 
+
+#################################
+# custom config
+#################################
+#
+# [addons.a.b]
+# c = "d"
